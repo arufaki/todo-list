@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](../todo-app/src/assets/preview.png)
+![screenshot](https://github.com/Arufaki/todo-list/blob/ccbaff64115978a4d3950f1c8f607527f0b3dcc5/src/assets/preview.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
