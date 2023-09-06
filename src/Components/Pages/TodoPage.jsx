@@ -7,10 +7,12 @@ import Todos from "../Fragments/Todos";
 import Main from "../Layouts/Main";
 
 export default function TodoPage() {
-  const [todos, setTodos] = useState(
-    JSON.parse(localStorage.getItem("todo-list") || [])
-  );
+  const [todos, setTodos] = useState([]);
   const [slider, setSlider] = useState(0);
+
+  useEffect(() => {
+    setTodos(JSON.parse(localStorage.getItem("todo-list")) || []);
+  }, []);
 
   useEffect(() => {
     window.localStorage.setItem("todo-list", JSON.stringify(todos));
