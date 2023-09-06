@@ -14,7 +14,7 @@ export default function List({
   const filterComplete = todos.filter((todo) => todo.complete == true);
 
   const removeTodo = (todoIndex) => {
-    const deleteTodo = todos.filter((_, index) => index !== todoIndex);
+    const deleteTodo = todos.filter((todo) => todo !== todoIndex);
     setDeleteTodos(deleteTodo);
   };
 
@@ -64,7 +64,7 @@ export default function List({
               />
               <DeleteOutlineIcon
                 className="delete-icon"
-                onClick={() => removeTodo(index)}
+                onClick={() => removeTodo(todo)}
               />
             </div>
           ))}
